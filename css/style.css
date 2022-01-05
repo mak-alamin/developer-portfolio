@@ -1,0 +1,10 @@
+.intro-name {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: rgb(29, 54, 82);
+  text-shadow: 0 0 1px #000;
+}
+
+.intro-name span {
+  color: rgb(11, 110, 167);
+}
