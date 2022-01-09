@@ -1,7 +1,39 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+header {
+  background-color: #313131;
+  color: #fff;
+  flex: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+main {
+  flex: 4;
+}
+section.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .intro-name {
   font-size: 2.5em;
   font-weight: 300;
-  color: rgb(29, 54, 82);
+  color: rgb(255, 255, 255);
   text-shadow: 0 0 1px #000;
 }
 
