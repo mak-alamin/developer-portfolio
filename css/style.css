@@ -1,4 +1,5 @@
 :root {
+  --color-black: #03203c;
   --link-gray: #8b9ec2;
   --link-white: #ffffff;
   --link-blue: #00aeb4;
@@ -35,8 +36,28 @@ body {
 .mb-3 {
   margin-bottom: 30px;
 }
+.mt-3 {
+  margin-top: 30px;
+}
 .text-center {
   text-align: center;
+}
+.button-primary,
+.button-secondary {
+  background-color: var(--color-black);
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.button-secondary {
+  background-color: var(--link-gray);
+  color: var(--color-black);
 }
 img {
   width: 100%;
@@ -46,6 +67,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: var(--color-black);
 }
 header {
   color: #fff;
@@ -136,11 +165,52 @@ section.services,
 section.skills,
 section.portfolio,
 section.contact {
-  padding: 40px;
+  padding: 60px 40px;
+}
+section.about p {
+  max-width: 560px;
+  margin: 0 auto;
 }
 /* About section ends */
 
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+.skills-box {
+  padding: 1rem;
+  color: #000;
+  cursor: pointer;
+}
+.skills-box:hover img {
+  transition: .3s all ease-in-out;
+  transform: translateY(-20px);
+}
+.skills-icons {
+  width: 50px;
+  z-index: 2;
+}
+.skills-box h3 {
+  color: #333;
+  margin-top: 0.5rem;
+}
+/* Skills end*/
+
 /* Contact Section */
+section.contact,
+section.skills {
+  background-color: #f9fcff;
+}
+section.contact{
+  text-align: left;
+}
 .contact h3 {
   margin-bottom: 20px;
 }
@@ -161,21 +231,16 @@ section.contact {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+.contact form input[type="submit"] {
+  max-width: 200px;
+}
+
 .contact form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-}
-.contact input[type="submit"] {
-  max-width: 200px;
-  font-size: 17px;
-}
-.contact input[type="submit"]:hover {
-  cursor: pointer;
-  background-color: #00a3e1;
-  transition: 0.3s all;
 }
 /* Contact ends */
 

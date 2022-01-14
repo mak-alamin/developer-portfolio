@@ -1,0 +1,14 @@
+/* Skills section */
+@media screen and (max-width:990px){
+.skills-container{
+grid-tempLate-columns: repeat(2, 1fr);
+padding: 2rem 50px;
+}
+}
+
+@media screen and (max-width:650px){
+.skills-container{
+grid-tempLate-columns:2fr;
+padding: 2rem 50px;
+}
+}
