@@ -1,7 +1,8 @@
 :root {
-  --link-gray: #5d7093;
+  --link-gray: #8b9ec2;
   --link-white: #ffffff;
   --link-blue: #00aeb4;
+  --link-light: #dae6fc;
 }
 *,
 body {
@@ -114,7 +115,7 @@ section.home {
 .home h1 {
   font-size: 3.5rem;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: var(--link-light);
   text-shadow: 0 0 50px #000;
   margin-bottom: 20px;
 }
@@ -125,7 +126,7 @@ section.home {
 .home h2,
 .home h2 span {
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--link-light);
 }
 /* Home section ends */
 
