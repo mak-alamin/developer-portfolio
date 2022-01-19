@@ -100,6 +100,24 @@ main {
 }
 
 /* Header styles */
+i.fa.fa-times {
+  color: #fff;
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  font-size: 16px;
+}
+i.fa.fa-bars {
+  color: #fff;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 15px;
+}
+header i.fa.fa-times,
+.home .fa.fa-bars {
+  display: none;
+}
 .mak-alamin {
   text-align: center;
 }

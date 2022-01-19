@@ -1,14 +1,36 @@
 /* Skills section */
-@media screen and (max-width:990px){
-.skills-container{
-grid-tempLate-columns: repeat(2, 1fr);
-padding: 2rem 50px;
-}
+@media screen and (max-width: 990px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
 }
 
-@media screen and (max-width:650px){
-.skills-container{
-grid-tempLate-columns:2fr;
-padding: 2rem 50px;
+@media screen and (max-width: 650px) {
+  .skills-container {
+    grid-template-columns: 2fr;
+    padding: 2rem 50px;
+  }
 }
+
+@media (max-width: 767px) {
+  header.mobile {
+      width: 60%;
+    transform: translateX(-100%);
+  }
+  .home .fa.fa-bars,
+  header i.fa.fa-times {
+    display: inline-block;
+  }
+  header.hide {
+    transition: 0.5s all ease-in-out;
+    transform: translateX(-100%);
+  }
+  header.show {
+    transition: 0.5s all ease-in-out;
+    transform: translateX(0);
+  }
+  main {
+    width: 100%;
+  }
 }
