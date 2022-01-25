@@ -16,3 +16,15 @@ if (window.innerWidth < 768) {
         header.classList.add('hide');
     });
 }
+
+// Typing animation
+setInterval(function(){    
+    document.querySelector(".typewriter").classList.remove("type_reverse");
+    document.querySelector(".typewriter").classList.add("type_straight");
+
+    setTimeout(function(){
+        document.querySelector(".typewriter").classList.remove("type_straight");
+        document.querySelector(".typewriter").classList.add("type_reverse");
+
+    }, 4500);
+}, 10000);
