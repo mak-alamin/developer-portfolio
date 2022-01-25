@@ -17,14 +17,25 @@ if (window.innerWidth < 768) {
     });
 }
 
+
 // Typing animation
-setInterval(function(){    
-    document.querySelector(".typewriter").classList.remove("type_reverse");
-    document.querySelector(".typewriter").classList.add("type_straight");
+let my_titles = [
+    "Full Stack Web Developer",
+    "UI/UX Graphics Designer",
+    "MERN Stack Developer",
+    "PHP & WordPress Expert",
+];
 
-    setTimeout(function(){
-        document.querySelector(".typewriter").classList.remove("type_straight");
-        document.querySelector(".typewriter").classList.add("type_reverse");
+my_titles.forEach(function(title, index){
+    let title_index = index;
 
-    }, 4500);
-}, 10000);
+    setInterval(function(){
+        if (title_index == my_titles.length) {
+            title_index = 0;
+        }
+        
+        document.querySelector(".typewriter span").innerHTML = my_titles[title_index];
+
+        title_index++;
+    }, 5000);
+});
