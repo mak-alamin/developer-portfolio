@@ -22,8 +22,8 @@ if (window.innerWidth < 768) {
 let my_titles = [
     "Full Stack Web Developer",
     "UI/UX Graphics Designer",
-    "MERN Stack Developer",
-    "PHP & WordPress Expert",
+    "MERN Stack Web Developer",
+    "PHP, Laravel & WordPress Expert",
 ];
 
 my_titles.forEach(function(title, index){
