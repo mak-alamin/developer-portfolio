@@ -58,7 +58,7 @@ function init() {
   const geometry = new THREE.BoxGeometry(250, 250, 250);
 
   loader.load(
-    "https://github.com/mak-alamin/developer-portfolio/images/mak-alamin-web-developer.png",
+    "https://github.com/mak-alamin/developer-portfolio/blob/main/images/mak-alamin-web-developer.png",
     function (texture) {
       //   const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 
