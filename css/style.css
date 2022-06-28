@@ -235,6 +235,10 @@ section.portfolio,
 section.contact {
   padding: 60px 40px;
 }
+div#rotating_cube {
+  width: 300px;
+  margin: auto;
+}
 section.about p {
   max-width: 560px;
   margin: 0 auto;
